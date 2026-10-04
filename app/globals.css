@@ -1,0 +1,55 @@
+:root {
+  --bg: #0e1117;
+  --nav-bg: #12161d;
+  --nav-border: #232a34;
+  --surface: #1c2027;
+  --surface-2: #181c22;
+  --border: #2d333d;
+  --border-soft: #292f38;
+  --text: #f0f3f9;
+  --text-2: #a1aab9;
+  --text-3: #8993a3;
+  --accent: #4f8cff;
+  --accent-bg: #23324c;
+  --green: #5bc9a1;
+  --green-bg: #213730;
+  --purple: #aa9af0;
+  --purple-bg: #302d41;
+  --amber: #e9b667;
+  --amber-bg: #393126;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}

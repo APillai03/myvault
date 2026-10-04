@@ -1,0 +1,220 @@
+/* ---------- upload ---------- */
+.upload {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dropzone {
+  height: 152px;
+}
+
+.dropTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.dropSub {
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.browse {
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.selectedFile {
+  height: 64px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.fileSymbol {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-bg);
+  border-radius: 8px;
+}
+
+.fileInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fileName {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fileMeta {
+  font-size: 11px;
+  color: var(--text-3);
+}
+
+.replace {
+  background: none;
+  border: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.fileSeparator {
+  width: 1px;
+  height: 20px;
+  background: var(--border);
+}
+
+.remove {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: 0;
+  font-size: 12px;
+  color: var(--text-2);
+}
+
+/* ---------- owner ---------- */
+.owner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ownerOptions {
+  display: flex;
+  gap: 8px;
+}
+
+.ownerOption {
+  flex: 1;
+  min-width: 0;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.ownerActive {
+  background: var(--accent-bg);
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* ---------- type + storage ---------- */
+.typeSelect {
+  border-color: var(--accent);
+  text-align: left;
+}
+
+.typeSelect span {
+  flex: 1;
+  color: var(--text);
+}
+
+.readOnly {
+  color: var(--text-2);
+}
+
+/* ---------- tags ---------- */
+.tagShell {
+  padding: 0 10px;
+}
+
+.tag {
+  height: 26px;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent-bg);
+  border-radius: 6px;
+  font-size: 12px;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+/* ---------- dropdown menu (open state) ---------- */
+.menu {
+  position: absolute;
+  top: 695px;
+  left: calc(100% + 24px);
+  width: 240px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.menuHeading {
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-2);
+}
+
+.menuDivider {
+  height: 1px;
+  background: var(--border);
+}
+
+.menuOption {
+  height: 30px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.menuActive {
+  background: var(--accent-bg);
+  color: var(--accent);
+  font-weight: 500;
+}
+
+@media (max-width: 1260px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .ownerOptions {
+    flex-wrap: wrap;
+  }
+  .ownerOption {
+    flex: 1 1 30%;
+  }
+}

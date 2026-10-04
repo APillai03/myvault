@@ -1,0 +1,13 @@
+.photoZone {
+  height: 116px;
+}
+
+.prompt {
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.browse {
+  font-weight: 500;
+  color: var(--accent);
+}
